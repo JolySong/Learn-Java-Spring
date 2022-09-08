@@ -2,16 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>learn-spring-lite</artifactId>
+        <groupId>cn.iomc</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.iomc</groupId>
-    <artifactId>learn-spring-lite</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>spring-bean-factory</module>
-        <module>spring-bean-factory-design</module>
-    </modules>
+    <artifactId>spring-bean-factory-design</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -20,11 +18,19 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.7</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>cn.iomc</groupId>
+            <artifactId>spring-commom</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
+
 </project>

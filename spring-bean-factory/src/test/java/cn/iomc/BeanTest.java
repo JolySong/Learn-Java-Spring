@@ -1,10 +1,8 @@
 package cn.iomc;
 
-import cn.iomc.service.UserService;
 import org.junit.Test;
 
 public class BeanTest {
-
 
 
     @Test
@@ -25,8 +23,6 @@ public class BeanTest {
         Object bean = beanFactory.getBean(beanName);
 
         userService = (UserService) bean;
-        System.out.println(userService.getClass().getCanonicalName());
-
         userService.sailHello();
     }
 

@@ -41,8 +41,8 @@ public class BeanFactory {
     /**
      * 向Bean容器存入Bean
      *
-     * @param name
-     * @param beanDefinition
+     * @param name bean名称
+     * @param beanDefinition bean定义信息
      */
     public void registerBeanDefinition(String name,
                                        BeanDefinition beanDefinition)

@@ -1,4 +1,4 @@
-package cn.iomc.service;
+package cn.iomc;
 
 public class UserService {
 
